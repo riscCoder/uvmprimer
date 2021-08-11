@@ -35,7 +35,7 @@ class dice_roller extends uvm_component;
       int the_roll;
       phase.raise_objection(this);
       void'(randomize());
-      repeat (20) begin
+      repeat (100) begin
          void'(randomize());
          the_roll = die1 + die2;
          roll_ap.write(the_roll);

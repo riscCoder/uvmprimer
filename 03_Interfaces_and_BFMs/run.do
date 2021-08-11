@@ -11,7 +11,7 @@ vcom -f dut.f
 #vlog ../misc/tinyalu.sv
 
 vlog -f tb.f
-vopt top -o top_optimized  +acc +cover=sbfec+tinyalu(rtl).
+vopt top -o top_optimized  +acc +cover=sbfec+tinyalu_dut
  vsim top_optimized -coverage
  set NoQuitOnFinish 1
  onbreak {resume}
