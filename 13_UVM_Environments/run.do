@@ -32,7 +32,10 @@ coverage exclude -src ../../tinyalu_dut/single_cycle_add_and_xor.vhd -line 49 -c
 coverage exclude -src ../../tinyalu_dut/single_cycle_add_and_xor.vhd -scope /top/DUT/add_and_xor -line 49 -code b
 coverage save add_test.ucdb
 
+
 vcover merge  tinyalu.ucdb random_test.ucdb add_test.ucdb
+vcover report -html tinyalu.ucdb
 vcover report tinyalu.ucdb -cvg -details
+
 quit
 

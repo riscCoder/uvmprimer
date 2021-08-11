@@ -62,6 +62,7 @@ module top;
    
       animal_h = new(3); 
       
+      
       lion_h  = new(15);
       lion_h.make_sound();
       $display("The Lion is %0d years old", lion_h.age);

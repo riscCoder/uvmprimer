@@ -73,8 +73,10 @@ module top;
       lion_h  = new(15, "Mustafa");
       lion_cage::cage.push_back(lion_h);
       $display("Lions in cage"); 
-      foreach (lion_cage::cage[i])
+      foreach (lion_cage::cage[i]) begin
         $display(lion_cage::cage[i].get_name());
+        $display(lion_cage::cage[i].get_age());
+      end
    end
 
 endmodule : top

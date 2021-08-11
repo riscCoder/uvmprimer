@@ -34,5 +34,6 @@ coverage exclude -src ../../tinyalu_dut/single_cycle_add_and_xor.vhd -scope /top
 coverage save add_test.ucdb
 
 vcover merge  tinyalu.ucdb random_test.ucdb add_test.ucdb
+vcover report tinyalu.ucdb
 vcover report tinyalu.ucdb -cvg -details
 quit
